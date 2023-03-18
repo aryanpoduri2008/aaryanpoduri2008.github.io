@@ -4,7 +4,18 @@
         <link rel="stylesheet" href="color.css">
         <link rel="stylesheet" href="bootstrap.css">
     </head>
-    <body>
-        <p> This is the login page</p>
+    <body style = "position:relative; left:30px">
+        <h1>Log In</h1>
+        <form>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
     </body>
 </html>
