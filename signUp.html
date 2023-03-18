@@ -1,8 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <body>
-            <p> This is the sign up page</p>
-        </body>
+        <link rel="stylesheet" href="color.css">
+        <link rel="stylesheet" href="bootstrap.css">
     </head>
+    <body>
+        <h1>Sign Up</h1>
+        <form>
+            <div class="form-group">
+                <label for="firstName">First Name</label>
+                <input type="email" class="form-control" id="firstName" placeholder="Enter your first name">
+            </div>
+            <div class="form-group">
+                <label for="lastName">Last Name</label>
+                <input type="email" class="form-control" id="lastName" placeholder="Enter your last name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" placeholder="Password">
+            </div>
+            <div class="form-group">
+                <label for="interests">Provide 3 interests from the menu below</label>
+                <select multiple class="form-control" id="interests">
+                    <option>Math</option>
+                    <option>Biology</option>
+                    <option>Programming</option>
+                    <option>English</option>
+                    <option>Engineering</option>
+                    <option>Humanities</option>
+                    <option>Social Education</option>
+                    <option>Business</option>
+                    <option>Health & Fitness</option>
+                </select>
+                <small id="interestHelp" class="form-text text-muted">Use ⌘ on MacOS or ctrl on Windows to select more than one interest.</small>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </body>
 </html>
